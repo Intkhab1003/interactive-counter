@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus | Premium Interactive Counter</title>
+    
+    <!-- Google Fonts: Plus Jakarta Sans for a modern, geometric SaaS look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons for premium scalable vector icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Link to our Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating background orbs for depth and glassmorphism effect -->
+    <div class="bg-orbs" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <div class="app-container">
+        <!-- Top Navigation / Utility Bar -->
+        <header class="app-header">
+            <div class="brand-logo">
+                <i class="ph-fill ph-hexagon"></i>
+                <span>Nexus</span>
+            </div>
+            <div class="toolbar">
+                <button id="btn-sound" class="icon-btn" aria-label="Toggle Sound" title="Toggle Sound (Muted by default)">
+                    <i class="ph ph-speaker-slash"></i>
+                </button>
+                <button id="btn-theme" class="icon-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Mode">
+                    <i class="ph ph-sun"></i>
+                </button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Core Counter Card with interactive 3D Tilt -->
+            <section class="counter-section" id="tilt-card">
+                <div class="counter-display">
+                    <h2 class="counter-label">Current Value</h2>
+                    <!-- The main animated number -->
+                    <div id="counter-value" class="counter-value">0</div>
+                </div>
+
+                <!-- 3D tactile buttons -->
+                <div class="controls">
+                    <button id="btn-decrease" class="btn btn-secondary action-btn" title="Decrease (Arrow Down)">
+                        <i class="ph ph-minus"></i>
+                    </button>
+                    <button id="btn-reset" class="btn btn-outline action-btn" title="Reset to Zero (R)">
+                        <i class="ph ph-arrow-counter-clockwise"></i>
+                        <span>Reset</span>
+                    </button>
+                    <button id="btn-increase" class="btn btn-primary action-btn" title="Increase (Arrow Up)">
+                        <i class="ph ph-plus"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Analytics and History Sidebar -->
+            <aside class="dashboard-section">
+                <!-- Session Statistics Grid -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon purple-glow"><i class="ph ph-trend-up"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-title">Highest</span>
+                            <span id="stat-highest" class="stat-value">0</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon blue-glow"><i class="ph ph-trend-down"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-title">Lowest</span>
+                            <span id="stat-lowest" class="stat-value">0</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon cyan-glow"><i class="ph ph-plus-circle"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-title">Session Increases</span>
+                            <span id="stat-increases" class="stat-value">0</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon red-glow"><i class="ph ph-minus-circle"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-title">Session Decreases</span>
+                            <span id="stat-decreases" class="stat-value">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Activity History -->
+                <div class="history-card">
+                    <div class="history-header">
+                        <h3><i class="ph ph-clock-counter-clockwise"></i> Activity Log</h3>
+                        <span class="history-count">Latest 10</span>
+                    </div>
+                    <ul id="history-list" class="history-list">
+                        <!-- JavaScript will dynamically inject `<li>` elements here -->
+                        <li class="history-empty">No activity yet. Start clicking!</li>
+                    </ul>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <!-- Link to our Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
