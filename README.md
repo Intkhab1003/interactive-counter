@@ -50,4 +50,4 @@ To run this project locally on your machine:
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/YourUsername/interactive-counter.git](https://github.com/YourUsername/interactive-counter.git)
+   git clone [https://github.com/Intkhab1003/interactive-counter.git](https://github.com/Intkhab1003/interactive-counter.git)
