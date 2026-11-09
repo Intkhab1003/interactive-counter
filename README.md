@@ -13,7 +13,7 @@
 
 Developed as a showcase project for the **Webora Tec Internship (Week 3, Task 1)**, Nexus elevates the traditional "counter app" into a premium dashboard experience. It features instant state management, robust interaction history, and an accessible, hardware-accelerated UI designed with dark-mode glassmorphism principles.
 
-**🔗 [View Live Demo](https://khabii.github.io/interactive-counter) <!-- Update this link once hosted on GitHub Pages -->**
+**🔗 [View Live Demo]([(https://intkhab1003.github.io/interactive-counter/)](https://intkhab1003.github.io/interactive-counter/)) <!-- Update this link once hosted on GitHub Pages -->**
 
 
 
