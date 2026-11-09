@@ -19,7 +19,7 @@ Developed as a showcase project for the **Webora Tec Internship (Week 3, Task 1)
 
 <div align="center">
   <!-- Replace the src below with the actual path to your screenshot once you take one -->
-  <img src="https://via.placeholder.com/800x450/0A0E17/FFFFFF?text=Nexus+Dashboard+Screenshot" alt="Nexus Dashboard Preview" width="800"/>
+  <img src="D:\weboratec_internship\week3\interactive-counter" alt="Nexus Dashboard Preview" width="800"/>
 </div>
 
 ## 🚀 Key Features
